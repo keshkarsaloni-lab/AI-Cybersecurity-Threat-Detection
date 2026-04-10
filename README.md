@@ -25,43 +25,43 @@ This project is an AI-based cybersecurity system that detects network threats us
 - Joblib
 
 ---
-## 📂 Project Structure
+## 📁 Project Structure
 
 AI-Cybersecurity-Threat-Detection/
 │
-├── dashboard/
+├── dashboard/                  # Streamlit dashboard UI
 │   └── app.py
 │
-├── data/
+├── data/                       # Raw dataset
 │   └── KDDTrain+.txt
 │
-├── models/
+├── models/                     # Saved trained models
 │   └── model.pkl
 │
-├── src/
-│   ├── clean_data.py
-│   ├── evaluate.py
-│   ├── feature_engineering.py
-│   ├── load_data.py
-│   ├── model.py
-│   └── predict.py
+├── src/                        # Core ML pipeline code
+│   ├── load_data.py            # Load dataset
+│   ├── clean_data.py           # Data cleaning
+│   ├── feature_engineering.py  # Feature creation & encoding
+│   ├── model.py                # Model training
+│   ├── predict.py              # Predictions
+│   └── evaluate.py             # Evaluation metrics
 │
-├── notebooks/
+├── notebooks/                  # Jupyter notebooks (EDA)
 │   └── EDA.ipynb
 │
-├── outputs/
+├── outputs/                    # Results and logs
 │   └── results.txt
 │
-├── images/
+├── images/                     # Screenshots for README
 │   └── dashboard.png
 │
-├── docs/
+├── docs/                       # Project documentation
 │   └── project_report.md
 │
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── main.py
+├── main.py                     # Main execution script
+├── requirements.txt            # Dependencies
+├── .gitignore                  # Ignored files
+└── README.md                   # Project documentation
 
 ---
 
