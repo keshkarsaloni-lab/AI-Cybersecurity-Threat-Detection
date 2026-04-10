@@ -96,6 +96,19 @@ python -m streamlit run dashboard/app.py
 
 ---
 
+## 📸 Screenshots
+
+### 🔹 Dashboard UI
+![Dashboard](images/dashboard1.png)
+
+### 🔹 Threat Detection Alert
+![Threat](images/dashboard2.png)
+
+### 🔹 Visualization Graph
+![Graph](images/dashboard3.png)
+
+---
+
 ## 🧠 Key Concepts Used
 - Machine Learning (Random Forest)
 - Anomaly Detection
