@@ -26,6 +26,8 @@ This project is an AI-based cybersecurity system that detects network threats us
 
 ---
 
+```
+
 ## 📁 Project Structure
 
 AI-Cybersecurity-Threat-Detection/
@@ -64,6 +66,7 @@ AI-Cybersecurity-Threat-Detection/
 ├── .gitignore
 └── README.md
 
+```
 
 ---
 
