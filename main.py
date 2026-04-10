@@ -8,15 +8,8 @@ from src.predict import predict
 from sklearn.model_selection import train_test_split
 
 df = load_dataset("data/KDDTrain+.txt")
-
-print("Dataset Preview:")
-print(df .head())
-
 df = clean_data(df)
 df = feature_engineering(df)
-
-print("\n Preprocessed Data:")
-print(df .head())
 
 X = df.iloc[:, :-1]   
 y = df.iloc[:, -1]    
@@ -33,3 +26,14 @@ print("Accuracy:", accuracy)
 print("Precision:", precision)
 print("Recall:", recall)
 print("F1 Score:", f1)
+
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
+cm = confusion_matrix(y_test, y_pred)
+
+disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+disp.plot()
+
+plt.title("Confusion Matrix")
+plt.show()
