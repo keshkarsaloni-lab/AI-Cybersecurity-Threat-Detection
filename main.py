@@ -8,6 +8,10 @@ from src.predict import predict
 from sklearn.model_selection import train_test_split
 
 df = load_dataset("data/KDDTrain+.txt")
+
+print("Dataset Preview:")
+print(df .head())
+
 df = clean_data(df)
 df = feature_engineering(df)
 
