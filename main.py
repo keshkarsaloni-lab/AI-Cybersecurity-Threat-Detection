@@ -15,6 +15,9 @@ print(df .head())
 df = clean_data(df)
 df = feature_engineering(df)
 
+print("\n Preprocessed Data:")
+print(df .head())
+
 X = df.iloc[:, :-1]   
 y = df.iloc[:, -1]    
 
